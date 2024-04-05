@@ -3,6 +3,8 @@ local map = vim.keymap.set
 -- general mappings
 map("n", "<C-s>", "<cmd> w <CR>") -- Save file
 map("n", "<C-c>", "<cmd> %y+ <CR>") -- copy whole filecontent
+map("n", "<A-S-Down>", ":m .+1<CR>==")
+map("n", "<A-S-Up>", ":m .-2<CR>==")
 
 -- nvimtree
 map("n", "<C-n>", "<cmd> NvimTreeToggle <CR>")
