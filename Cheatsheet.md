@@ -50,7 +50,7 @@ Help: ctrl+h then g?
 - daw (delete around word)
 - 
 
-## Copies
+### Copies
 
 - vey (copy entire word)
 
