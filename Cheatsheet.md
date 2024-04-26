@@ -31,6 +31,29 @@ Help: ctrl+h then g?
 
 - Format file: space + fm
 
+## Vim recipes
+
+### Insert text Multiline
+
+- Ctrl v (visual block mode)
+- Move up/down 
+- For insert at beginning of row
+  - shift + I (insert text)
+  - esc after having inserted
+- For insert at end of row
+  - $
+  - Shift + A (insert text)
+  - esc after having inserted
+
+### Deletes
+
+- daw (delete around word)
+- 
+
+## Copies
+
+- vey (copy entire word)
+
 ## Helpful links
 
 - [NVIM Chad cheatsheet](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fnvchad-cheatisheet-v0-59pmxg6dumua1.png%3Fwidth%3D2520%26format%3Dpng%26auto%3Dwebp%26s%3D5dc1b33cf4244851a43d912856b676c3e36f0b6c)
