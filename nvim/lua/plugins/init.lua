@@ -100,16 +100,22 @@ local plugins = {
       require "plugins.configs.cmp"
     end,
   },
-
   {
     "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "gopls",
+      }
+    },
     build = ":MasonUpdate",
     cmd = { "Mason", "MasonInstall" },
     config = function()
       require("mason").setup()
     end,
   },
-
+  {
+    'williamboman/mason-lspconfig.nvim'
+  },
   -- lsp
   {
     "neovim/nvim-lspconfig",
@@ -163,6 +169,10 @@ local plugins = {
       require("Comment").setup()
     end,
   },
+  -- lsp zero stuff
+  {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+  {'hrsh7th/cmp-nvim-lsp'},
+  {'hrsh7th/nvim-cmp'},
 }
 
 require("lazy").setup(plugins, require "plugins.configs.lazy")

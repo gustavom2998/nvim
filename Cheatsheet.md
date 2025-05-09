@@ -1,5 +1,13 @@
 # Cheatsheet
 
+## ripgrep
+
+Replace in Multiple files with confirmation for replace: 
+
+```
+:args `rg -l '{FIND}'` | argdo %s/{FIND}/{REPLACE}/gc | update
+```
+
 ## nvim-tree
 
 Help: ctrl+h then g?

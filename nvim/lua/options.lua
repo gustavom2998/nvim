@@ -7,12 +7,16 @@ opt.showmode = false
 
 opt.clipboard = "unnamedplus"
 
+-- Spell check
+opt.spelllang = 'en_us'
+opt.spell = true
+
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 2
+opt.shiftwidth = 4
 opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
+opt.tabstop = 4
+opt.softtabstop = 4
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
@@ -32,6 +36,8 @@ opt.undofile = true
 
 opt.timeoutlen = 400
 opt.updatetime = 250
+
+opt.colorcolumn = "80"
 
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
