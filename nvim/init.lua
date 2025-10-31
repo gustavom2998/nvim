@@ -21,3 +21,5 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 vim.cmd "colorscheme carbonfox"
+
+vim.lsp.enable("gopls")

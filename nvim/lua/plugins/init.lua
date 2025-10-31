@@ -105,6 +105,9 @@ local plugins = {
     opts = {
       ensure_installed = {
         "gopls",
+        "delve",
+        "goimports",
+        "gofumpt"
       }
     },
     build = ":MasonUpdate",
