@@ -13,7 +13,7 @@ map("n", "<C-h>", "<cmd> NvimTreeFocus <CR>")
 -- telescope
 map("n", "<leader>fo", "<cmd> Telescope oldfiles <CR>")
 map("n", "<C-f>", "<cmd> Telescope live_grep <CR>")
-map("n", "<C-S-f>", "<cmd> Telescope find_files <CR>")
+map("n", "<C-A-f>", "<cmd> Telescope find_files <CR>")
 map("n", "<leader>gt", "<cmd> Telescope git_status <CR>")
 
 -- bufferline, cycle buffers
