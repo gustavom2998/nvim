@@ -11,15 +11,16 @@ map("n", "<C-n>", "<cmd> NvimTreeToggle <CR>")
 map("n", "<C-h>", "<cmd> NvimTreeFocus <CR>")
 
 -- telescope
-map("n", "<C-S-f>", "<cmd> Telescope find_files <CR>")
 map("n", "<leader>fo", "<cmd> Telescope oldfiles <CR>")
 map("n", "<C-f>", "<cmd> Telescope live_grep <CR>")
+map("n", "<C-S-f>", "<cmd> Telescope find_files <CR>")
 map("n", "<leader>gt", "<cmd> Telescope git_status <CR>")
 
 -- bufferline, cycle buffers
 map("n", "<Tab>", "<cmd> BufferLineCycleNext <CR>")
 map("n", "<S-Tab>", "<cmd> BufferLineCyclePrev <CR>")
-map("n", "<C-q>", "<cmd> bd <CR>")
+map("n", "<C-w>", "<cmd> bd <CR>")
+map("n", "<C-q>", "<cmd> BufferLineCloseOthers <CR>")
 
 -- comment.nvim
 map("n", "<leader>/", function()
