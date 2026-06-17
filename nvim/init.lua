@@ -22,4 +22,8 @@ require "plugins"
 
 vim.cmd "colorscheme carbonfox"
 
+vim.lsp.config("gopls", {
+    cmd = {"/home/gustavo/path/go/bin/gopls"}
+})
 vim.lsp.enable("gopls")
+vim.diagnostic.config({virtual_lines=true})
