@@ -23,7 +23,26 @@ require "plugins"
 vim.cmd "colorscheme carbonfox"
 
 vim.lsp.config("gopls", {
-    cmd = {"/home/gustavo/path/go/bin/gopls"}
+    cmd = {"/home/gustavo/path/go/bin/gopls"},
+    settings = {
+        gopls = {
+            hoverKind = "FullDocumentation",
+            usePlaceholders = true,
+            staticcheck = true,
+            hints = {
+                compositeLiteralTypes = true,
+                compositeLiteralFields = true,
+                parameterNames = true,
+                assignVariableTypes = true,
+                constantValues = true,
+                rangeVariableTypes = true,
+            },
+        },
+    },
 })
 vim.lsp.enable("gopls")
-vim.diagnostic.config({virtual_lines=true})
+vim.diagnostic.config({
+    virtual_lines = {
+        overflow = "wrap",
+    },
+})
